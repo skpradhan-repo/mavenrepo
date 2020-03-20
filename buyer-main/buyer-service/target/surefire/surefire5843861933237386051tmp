@@ -1,7 +1,7 @@
 #surefire
-#Fri Mar 20 23:29:58 IST 2020
+#Sat Mar 21 00:28:54 IST 2020
 tc.0=com.sap.buyer.AppTest
-pluginPid=4210
+pluginPid=5495
 classPathUrl.0=/Users/c5301771/mavenrepo/buyer-main/buyer-service/target/test-classes
 classPathUrl.1=/Users/c5301771/mavenrepo/buyer-main/buyer-service/target/classes
 classPathUrl.2=/Users/c5301771/.m2/repository/junit/junit/4.11/junit-4.11.jar

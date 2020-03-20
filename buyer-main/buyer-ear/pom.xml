@@ -14,6 +14,7 @@
   <name>buyer-ear</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
+  <packaging>ear</packaging>
 
   <dependencies>
     <dependency>
@@ -25,23 +26,25 @@
   </dependencies>
 
   <build>
-    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
-      <plugins>
+   <pluginManagement>
+        <plugins>
         <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-ear-plugin</artifactId>
-          <version>3.0.1</version>
-          <configuration>
-            <modules>
-              <webmodule>
-                <groupId>com.sap.buyer</groupId>
-                <artifactId>buyer-web</artifactId>
-                <contextRoot>/Buyer</contextRoot>
-              </webmodule>
-            </modules>
-          </configuration>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-ear-plugin</artifactId>
+            <version>3.0.1</version>
+            <configuration>
+                <modules>
+                    <webModule>
+                        <groupId>com.sap.buyer</groupId>
+                        <artifactId>buyer-web</artifactId>
+                        <uri>web-0.0.1-SNAPSHOT.war</uri>
+                        <!-- Set custom context root -->
+                        <contextRoot>/application</contextRoot>
+                    </webModule>
+                </modules>
+            </configuration>
         </plugin>
-      </plugins>
-    </pluginManagement>
+        </plugins>
+        </pluginManagement>
   </build>
 </project>
